@@ -1,0 +1,48 @@
+//TODO fix import not to include in every file
+@import '../../scss/variables/index';
+
+.star-vote {
+  $_this: &;
+
+  direction: rtl; //to apply colors for stars properly
+  display: inline-block;
+  text-align: left;
+
+  &__star {
+    $_size: 24px;
+
+    color: $color-gray;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-family-star;
+    transition: color 0.2s ease;
+    width: $_size;
+
+    &--selected {
+      color: $color-gold-light;
+    }
+
+    &::before {
+      content: '★';
+      font-size: $_size;
+      height: $_size;
+      width: $_size;
+    }
+
+    &:hover,
+    &:hover ~ #{$_this}__star {
+      color: $color-gold;
+    }
+  }
+
+  &__input {
+    height: 0;
+    visibility: hidden;
+    width: 0;
+
+    &:checked,
+    &:checked ~ #{$_this}__star {
+      color: $color-gold;
+    }
+  }
+}

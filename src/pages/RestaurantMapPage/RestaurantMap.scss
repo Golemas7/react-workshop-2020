@@ -1,0 +1,34 @@
+@import 'src/scss/index';
+
+.leaflet-container {
+  height: calc(100vh - 54px);
+  margin-top: 54px;
+  width: 100%;
+
+  .search-control-icon-button {
+    position: relative;
+
+    svg {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.Map__loading {
+  $c-bg: rgba($color-dark-hero, 0.7);
+
+  align-items: center;
+  background-color: $c-bg;
+  bottom: 0;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: $z-index-modal + 1;
+}

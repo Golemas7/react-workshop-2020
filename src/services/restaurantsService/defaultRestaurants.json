@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "title": "London grill",
+    "description": "",
+    "latitude": "54.89181397856475",
+    "longitude": "23.91892087867546",
+    "rating": 4.7
+  },
+  {
+    "id": "2",
+    "title": "Natali",
+    "description": "",
+    "latitude": "54.932620",
+    "longitude": "23.888100",
+    "rating": 3.3
+  },
+  {
+    "id": "3",
+    "title": "Talluti",
+    "description": "",
+    "latitude": "54.911040",
+    "longitude": "23.940100",
+    "rating": 5
+  },
+  {
+    "id": "4",
+    "title": "McDonalds",
+    "description": "",
+    "latitude": "54.920390",
+    "longitude": "23.953440",
+    "rating": 3.5
+  }
+]

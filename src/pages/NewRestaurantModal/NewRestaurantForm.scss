@@ -1,0 +1,15 @@
+.new-restaurant-form {
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__button-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+}

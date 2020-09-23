@@ -1,0 +1,29 @@
+@import '../../scss/variables/index';
+
+.button {
+  border: 1px solid #333;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 600;
+
+  &--primary {
+    background-color: $color-gold;
+    border: 0;
+    font-size: $font-size-base;
+    padding: 8px 16px;
+
+    &:hover {
+      background-color: $color-gold-light;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-white;
+    font-size: $font-size-small;
+    padding: 4px 8px;
+
+    &:hover {
+      background-color: $color-gray;
+    }
+  }
+}

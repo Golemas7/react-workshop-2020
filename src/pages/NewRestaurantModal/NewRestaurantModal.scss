@@ -1,0 +1,40 @@
+@import 'src/scss/index';
+
+$modal-overlay-bg: rgba($color-dark-hero, 0.9);
+
+.modal {
+  background-color: $color-white;
+  border-radius: 4px;
+  flex-grow: 0;
+  height: auto;
+  margin-bottom: auto;
+  padding: 40px;
+  position: relative;
+  top: 40px;
+
+  &__overlay {
+    background-color: $modal-overlay-bg;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: $z-index-modal;
+  }
+
+  &__close-btn {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

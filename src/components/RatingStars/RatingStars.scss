@@ -1,0 +1,32 @@
+@import '../../scss/variables/index';
+
+:root {
+  --star-size: 24px;
+  --star-color: #eee;
+  --star-background: #fc0;
+}
+
+.ratingStars {
+  --percent: calc(var(--rating) / 5 * 100%);
+
+  display: inline-block;
+  font-family: $font-family-star;
+  font-size: var(--star-size);
+  line-height: 1;
+
+  &::before {
+    background: linear-gradient(
+      90deg,
+      var(--star-background) var(--percent),
+      var(--star-color) var(--percent)
+    );
+    content: '★★★★★';
+    letter-spacing: 1px;
+
+    //Star display fix
+    //stylelint-disable
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //stylelint-enable
+  }
+}

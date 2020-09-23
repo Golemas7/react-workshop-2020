@@ -1,0 +1,22 @@
+@import '../../scss/variables/index';
+
+.text-field {
+  display: block;
+  margin-bottom: 16px;
+
+  &__label {
+    display: block;
+    font-size: $font-size-base;
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    background: $color-white;
+    border: solid 1px $color-dark-hero;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: $font-size-base;
+    padding: 8px;
+    width: 100%;
+  }
+}

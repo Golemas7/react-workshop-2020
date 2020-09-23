@@ -1,0 +1,41 @@
+.restaurant-list {
+  $c-border: #cfcfcf;
+  $c-background: #f5ffff;
+  $_this: &;
+
+  box-sizing: border-box;
+  margin-top: 54px;
+  padding: 16px;
+
+  &__wrapper {
+    border: 1px solid $c-border;
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &__table {
+    width: 100%;
+  }
+
+  &__cell-header {
+    padding: 16px;
+
+    &--centered {
+      text-align: center;
+    }
+  }
+
+  &__cell {
+    padding: 8px;
+
+    &--centered {
+      text-align: center;
+    }
+
+    #{$_this}__row:nth-child(odd) & {
+      background-color: $c-background;
+    }
+  }
+}
